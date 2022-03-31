@@ -1,37 +1,8 @@
-## Welcome to GitHub Pages
+# ERC 2022 ArUco Message 
 
-You can use the [editor on GitHub](https://github.com/filesmuggler/erc_aruco_msg/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## Overview
+It is a service message definition you need to have compiled in your workspace in order to be able to call it. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/filesmuggler/erc_aruco_msg/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Service
+Checking service is advertised under `/erc_aruco_score`. It is defined in the `erc_aruco_checker` package. The request message type is of `ErcAruco`.
+It is defined in the `erc_aruco_msg` package as 14 float32 arrays of 3 numbers, which correspond to 14 tag positions (tags from 1 to 14). On the scene. The returned type is a single float32 value with your obtained score. The tag placed inside the box on the panel is not taken into account.
